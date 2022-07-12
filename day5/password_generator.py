@@ -27,3 +27,4 @@ for i in range(num_symbols):
 password = "".join(random.sample(password_list, total_character))
 
 print("Here is your Password: {}".format(password))
+
