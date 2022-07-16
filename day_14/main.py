@@ -22,7 +22,6 @@ vs = """
 |___/____(_)
 """
 
-
 def random_account():
     return random.choice(data)
 
@@ -75,9 +74,3 @@ def game():
             print("Sorry, that's wrong. Final score: {}".format(score))
 
 game()
-
-
-
-
-
-
