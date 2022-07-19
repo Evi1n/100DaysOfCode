@@ -142,3 +142,38 @@ w.bgcolor("black")
 spirograph()
 w.exitonclick()
 """
+
+
+"""MY SPIROGRAPH CODE 2 (SQUARE)"""
+turtle.colormode(255)
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+
+    color = r,g,b
+    return color
+
+def draw_square(square):
+    
+    for i in range(4):
+        square.forward(150)
+        square.left(90)
+
+
+def spirograph():
+    draw = turtle.Turtle()
+    draw.hideturtle()
+    draw.speed("fastest")
+   
+    for _ in range(100):
+        draw.color(random_color())
+        draw_square(draw)
+        draw.left(10)
+
+w = turtle.Screen()
+w.setup(width=432,height=768)
+w.bgcolor("black")
+spirograph()
+w.exitonclick()
