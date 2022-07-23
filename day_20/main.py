@@ -11,6 +11,7 @@ def random_color():
 
     color = r,g,b
     return color
+
 # Screen settings
 screen = turtle.Screen()
 screen.setup(width=600, height=600)
