@@ -2,6 +2,8 @@ import turtle
 import time
 import random
 
+delay = 0.10
+
 turtle.colormode(255)
 
 def random_color():
@@ -11,6 +13,7 @@ def random_color():
 
     color = r,g,b
     return color
+
 # Screen settings
 screen = turtle.Screen()
 screen.setup(width=600, height=600)
@@ -95,7 +98,7 @@ while is_game_on:
     x_snake = snake_head.xcor()
     y_snake = snake_head.ycor()
 
-    if x_snake > 300  or x_snake < -300 or y_snake > 300 or y_snake < -300:
+    if x_snake > 280  or x_snake < -280 or y_snake > 280 or y_snake < -280:
         time.sleep(1)
         snake_head.goto(0,0)
         snake_head.direction = "stop"
@@ -123,8 +126,8 @@ while is_game_on:
         food.goto(x_food, y_food)
         skor.clear()
         skor.write("Skor: {}".format(skor_game), align="center", font=("Courier", 24, "normal"))
-        skor.write("Skor: {}".format(skor_game), align="center", font=("Courier", 24, "normal"))
         skor.color(first_color)
+        delay -=0.01
 
     for index in range(len(segments)-1, 0, -1):
         x = segments[index-1].xcor()
@@ -135,9 +138,23 @@ while is_game_on:
         x = snake_head.xcor()
         y = snake_head.ycor()
         segments[0].goto(x, y)
-        
+
     move()
-    time.sleep(0.10)
+
+    for segment in segments:
+        if segment.distance(snake_head) < 18:
+            time.sleep(1)
+            snake_head.goto(0,0)
+            snake_head.direction = "stop"
+            for segment in segments:
+                segment.goto(1000,1000)
+            segments = []
+            skor_game = 0
+            skor.clear()
+            skor.write("Skor: {}".format(skor_game), align="center", font=("Courier", 24, "normal"))
+            is_game_on = False
+
+    time.sleep(delay)
 
 
 screen.mainloop()
