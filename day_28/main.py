@@ -6,9 +6,9 @@ from PIL import ImageTk, Image
 from matplotlib.pyplot import text
 
 reps = 0
-WORK_MIN = 1
-SHORT_BREAK = 1
-LONG_BREAK = 1
+WORK_MIN = 25
+SHORT_BREAK = 5
+LONG_BREAK = 10
 timer = None
 
 # Define the Reset function
@@ -24,9 +24,9 @@ def reset_timer():
 def start_timer():
     global reps
     reps +=1
-    work_sec = WORK_MIN * 6
-    short_break_sec = SHORT_BREAK * 6
-    long_break_sec = LONG_BREAK * 6
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK * 60
+    long_break_sec = LONG_BREAK * 60
     if reps % 8 == 0:
         count_down(long_break_sec)
         title_label.config(text="Break")
