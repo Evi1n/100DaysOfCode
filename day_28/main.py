@@ -3,7 +3,6 @@ import math
 import time
 from tkinter import *
 from PIL import ImageTk, Image
-from matplotlib.pyplot import text
 
 reps = 0
 WORK_MIN = 25
