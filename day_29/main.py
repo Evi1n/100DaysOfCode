@@ -44,6 +44,7 @@ def save():
 # Window Settings
 window = Tk()
 window.config(bg="#e1e5f2", padx=20, pady=20)
+window.title("Password Recorder")
 window.resizable(width=False, height=False)
 
 # Icon Settings
