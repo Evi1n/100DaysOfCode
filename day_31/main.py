@@ -16,7 +16,7 @@ except FileNotFoundError:
 else:
     to_learn = data.to_dict(orient="records")
 
-
+#----------------------- FUNCTIONS -----------------------#
 def next_card():
     global current_card, flip_timer
     window.after_cancel(flip_timer)
@@ -38,6 +38,7 @@ def flip_card():
     canvas.itemconfig(card_title, text="Turkish")
     canvas.itemconfig(card_word, text=current_card["Turkish"])
     
+#----------------------- UI SETTINGS -----------------------#
 
 # Window Settings
 window = Tk()
