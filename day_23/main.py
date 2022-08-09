@@ -4,7 +4,6 @@ from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
 
-
 # Screen Settings
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -38,8 +37,5 @@ while game_is_on:
         player.go_to_start()
         car_manager.level_up()
         score.increase_level()
-
-
-    
-        
+   
 screen.exitonclick()
