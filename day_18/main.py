@@ -22,7 +22,6 @@ dots.penup()
 dots.setheading(225)
 dots.forward(250)
 dots.setheading(0)
-
 number_of_dots = 110
 
 def draw():
