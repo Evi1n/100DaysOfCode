@@ -143,7 +143,6 @@ spirograph()
 w.exitonclick()
 """
 
-
 """MY SPIROGRAPH CODE 2 (SQUARE)"""
 turtle.colormode(255)
 
