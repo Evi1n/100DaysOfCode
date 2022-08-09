@@ -11,11 +11,10 @@ logo = '''
                        .-------------.
                       /_______________\\
 '''
-
-print("Welcome to the secret auction program!")
-
 bidders = []
 bids = []
+
+print("Welcome to the secret auction program!")
 
 def info():
   name = input("What is your name?\n")
