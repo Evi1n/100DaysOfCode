@@ -17,9 +17,7 @@ a8"     "" 88 88P'    "8a 88P'    "8a a8P_____88 88P'   "Y8
 """
 
 print(logo)
-
 print("Welcome to the caesar cipher!")
-
 
 def play():
     def caesar_encyrpted(message, key):
@@ -30,7 +28,6 @@ def play():
         print(encrypted_message)
 
     def caesar_cyrpted(message, key):
-    
         crypted_message = ''
         alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
         for i in message:
