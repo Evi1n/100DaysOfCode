@@ -1,3 +1,6 @@
+import random
+from replit import clear
+
 logo = """
 .------.            _     _            _    _            _    
 |A_  _ |.          | |   | |          | |  (_)          | |   
@@ -9,9 +12,6 @@ logo = """
       `------'                           |__/           
 """
        
-import random
-from replit import clear
-
 def deal_card():
   """Returns a random card from the deck."""
   cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -49,9 +49,7 @@ def compare(user_score, computer_score):
     return "You lose 😤"
 
 def play_game():
-
   print(logo)
-
   user_cards = []
   computer_cards = []
   is_game_over = False
