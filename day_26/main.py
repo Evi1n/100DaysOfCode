@@ -16,10 +16,8 @@ for word_letter in word:
 
 print(output_list)
 
-
 """
-# Another Option
-
+Another Option
 phonetic_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 print(phonetic_dict)
 word = input("Enter a word: ").upper()
