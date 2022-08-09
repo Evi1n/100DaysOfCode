@@ -32,6 +32,7 @@ while len(guessed_states)<50:
         new_data = pd.DataFrame(missing_states)
         new_data.to_csv("states_to_learn.csv")
         break
+    
     if answer_state in states:
         guessed_states.append(answer_state)
         write_state = turtle.Turtle()
