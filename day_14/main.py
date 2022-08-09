@@ -38,7 +38,6 @@ def check_answer(guess, a_followers, b_followers):
         return guess == "b"
 
 def game():
-
     print(logo)
     score = 0
     game_status = True
@@ -46,7 +45,6 @@ def game():
     account_b = random_account()
     
     while game_status:
-
         account_a = account_b
         account_b = random_account()
 
