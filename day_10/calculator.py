@@ -29,9 +29,7 @@ def multiply(num1,num2):
 def divide(num1,num2):
     return num1/num2
 
- 
 def calculator():
-    
     again = True
 
     while again:
@@ -52,7 +50,6 @@ def calculator():
         else:
             print("Please pick an valid operation!")
     
-
         again = input("Type 'Y' if you want to go again. Otherwise type 'N'.")
 
         if again == "Y":
