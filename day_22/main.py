@@ -135,5 +135,4 @@ while is_game_on:
         pen.write("Game over. The player on the {} won!".format("Right"), align='center', font=('Courier', 18, 'bold'))
         is_game_on = False
 
-
 screen.mainloop()
