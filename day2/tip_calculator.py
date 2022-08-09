@@ -1,4 +1,4 @@
-print("Welcome to the tip calculator.")
+print("Welcome to the tip calculator!")
 
 bill = float(input("What was the total bill? $"))
 people = int(input("How many people to split to bill? "))
