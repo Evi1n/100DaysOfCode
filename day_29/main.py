@@ -5,7 +5,6 @@ from PIL import ImageTk, Image
 from random import choice, randint, shuffle
 import pyperclip
 
-
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
 def generate_password():
