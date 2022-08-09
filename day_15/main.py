@@ -48,7 +48,6 @@ def is_resource_sufficient(order_ingredients):
         if order_ingredients[item] >= resources[item]:
             print("Sorry there is not enough {}.".format(item))
             is_enough = False
-
     return is_enough
 
 def process_coin():
