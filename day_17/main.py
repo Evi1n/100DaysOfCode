@@ -2,7 +2,6 @@ from quiz_brain import QuizBrain
 from data import question_data
 from question_model import Question
 
-
 questions = []
 
 for question in question_data:
