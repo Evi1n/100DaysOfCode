@@ -1,5 +1,5 @@
+# Import Modules
 from datetime import datetime
-
 import smtplib
 
 gmail_user = 'user_gmail.com'
