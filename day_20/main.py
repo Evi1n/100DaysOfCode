@@ -3,7 +3,6 @@ import time
 import random
 
 delay = 0.10
-
 turtle.colormode(255)
 
 def random_color():
@@ -84,7 +83,6 @@ screen.onkey(goUp, "Up")
 screen.onkey(goDown, "Down")
 screen.onkey(goLeft, "Left")
 screen.onkey(goRight, "Right")
-
 
 segments = []
 is_game_on = True
