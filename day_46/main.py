@@ -39,5 +39,4 @@ for song in song_list:
         song_urls.append(items[0]["uri"])
 
 playlist_id = sp.user_playlist_create(user=user_id, name=f"{date} Billboard 100", public=False)["id"]
-
 sp.playlist_add_items(playlist_id=playlist_id, items=song_urls)
